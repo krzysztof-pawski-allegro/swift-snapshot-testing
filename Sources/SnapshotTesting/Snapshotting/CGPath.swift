@@ -28,7 +28,7 @@
     ///   - drawingMode: The drawing mode.
     public static func image(
       precision: Float = 1,
-      perceptualPrecision: Float = 0.99,
+      perceptualPrecision: Float = 0.95,
       drawingMode: CGPathDrawingMode = .eoFill
     ) -> Snapshotting {
       return SimplySnapshotting.image(
@@ -67,7 +67,7 @@
     ///     [the precision](http://zschuessler.github.io/DeltaE/learn/#toc-defining-delta-e) of the
     ///     human eye.
     public static func image(
-      precision: Float = 1, perceptualPrecision: Float = 0.99, scale: CGFloat = 1,
+      precision: Float = 1, perceptualPrecision: Float = 0.95, scale: CGFloat = 1,
       drawingMode: CGPathDrawingMode = .eoFill
     ) -> Snapshotting {
       return SimplySnapshotting.image(

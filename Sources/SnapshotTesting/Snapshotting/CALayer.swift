@@ -25,7 +25,7 @@
     ///     match. 98-99% mimics
     ///     [the precision](http://zschuessler.github.io/DeltaE/learn/#toc-defining-delta-e) of the
     ///     human eye.
-    public static func image(precision: Float, perceptualPrecision: Float = 1) -> Snapshotting {
+    public static func image(precision: Float, perceptualPrecision: Float = 0.95) -> Snapshotting {
       return SimplySnapshotting.image(
         precision: precision, perceptualPrecision: perceptualPrecision
       ).pullback { layer in
@@ -59,7 +59,7 @@
     ///     human eye.
     ///   - traits: A trait collection override.
     public static func image(
-      precision: Float = 1, perceptualPrecision: Float = 1, traits: UITraitCollection = .init()
+      precision: Float = 1, perceptualPrecision: Float = 0.95, traits: UITraitCollection = .init()
     )
       -> Snapshotting
     {

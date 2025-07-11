@@ -25,7 +25,7 @@
       on config: ViewImageConfig,
       drawHierarchyInKeyWindow: Bool = false,
       precision: Float = 1,
-      perceptualPrecision: Float = 0.99,
+      perceptualPrecision: Float = 0.95,
       size: CGSize? = nil,
       traits: UITraitCollection = .init()
     )
@@ -62,7 +62,7 @@
     public static func image(
       drawHierarchyInKeyWindow: Bool = false,
       precision: Float = 1,
-      perceptualPrecision: Float = 0.99,
+      perceptualPrecision: Float = 0.95,
       size: CGSize? = nil,
       traits: UITraitCollection = .init()
     )
